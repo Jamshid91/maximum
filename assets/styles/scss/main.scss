@@ -26,10 +26,6 @@ button,
 input {
     outline: none;
     border: none;
-
-    &:hover {
-        opacity: 0.9;
-    }
 }
 
 ul, li {
@@ -544,6 +540,235 @@ section {
     }
 }
 // End customers
+
+.aside {
+    display: flex;
+    background: rgb(241,242,244);
+    background: linear-gradient(90deg, rgba(241,242,244,1) 0%, rgba(241,241,243,1) 10%, rgba(255,255,255,1) 100%);
+    padding: 70px 0;
+    &-left {
+        width: 50%;
+    }
+    &-right {
+        width: 50%;
+        position: relative;
+
+        &-bg {
+            width: 100%;
+            height: 400px;
+            background-color: var(--gray-dark);
+            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+        .right-box {
+            width: 520px;
+            height: 520px;
+            background-color: #7193bf;
+            clip-path: polygon(0 3%, 90% 0, 100% 10%, 100% 97%, 10% 100%, 0 90%);
+            position: relative;
+            z-index: 2;
+        }
+        .form {
+            font-family: "Inert", sans-serif;
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            top: 0;
+            left: 0;  
+            padding: 30px 0;
+
+            &-item {
+                display: flex;
+            }
+
+            &__title {
+                color: var(--white);
+                position: relative;
+                z-index: 4;
+                margin-left: 40px;
+                margin-bottom: 20px;
+                font-size: 48px;
+            }
+
+
+            &-left {
+                width: 40%;
+                height: 100%;
+                position: relative;
+                .form-list {
+                    position: relative;
+                    margin-bottom: 15px;
+                }
+                &-inp {
+                    width: 240px;
+                    height: 55px;
+                    background-color: #7193bf;
+                    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+                    position: relative;
+                    left: -25px;
+                    @include flex-center;
+                    z-index: 3;
+
+                    .form__inp {
+                        width: 230px;
+                        height: 45px;
+                        background-color: var(--white);
+                        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+                        padding: 0 15px;
+                        font-size: 16px;
+                        color: var(--gray-dark);
+                    
+                    }
+                }
+                .middle-inp,
+                .middle_inp {
+                    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+                }
+                .back {
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--gray-dark);
+                    position: absolute;
+                    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                    left: -25px;
+                    bottom: -25px;
+                    z-index: 0;
+                }
+                .middle_back {
+                    left: -25px;
+                    bottom: -18px;
+                }
+
+                &-inp-file {
+                    position: relative;
+                    z-index: 4;
+                    padding-left: 20px;
+                    margin-bottom: 25px;
+
+                    label {
+                        @include flex-between;
+                        cursor: pointer;
+
+                        .label__text {
+                            color: var(--white);
+                            font-weight: 700;
+                            border-bottom: 1px solid var(--white);
+                        }
+
+                    }
+
+                    .form__inp-file {
+                        display: none;
+                    }
+                }
+
+                &__text,
+                &__link {
+                    position: relative;
+                    z-index: 4;
+                    color: var(--white);
+                    text-align: right;
+                }
+
+                &__link {
+                    display: flex;
+                    align-items: end;
+                    flex-direction: column;
+                    line-height: 8px;
+                    margin-top: 10px;
+                    font-weight: 700;
+                    span {
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid var(--white);
+                    }
+                    
+                }
+            }
+
+            
+            
+            &-right {
+                width: 60%;
+                height: 100%;
+                position: relative;
+                z-index: 4;
+                padding: 10px 25px;
+
+                .form__textarea {
+                    width: 100%;
+                    height: 350px;
+                    border: none;
+                    outline: none;
+                    padding: 35px 25px 100px 35px;
+                    font-size: 18px;
+                    color: var(--gray-dark);
+
+                    &::placeholder {
+                        font-size: 18px;
+                        color: var(--gray-dark);
+                    }
+                }
+            }
+
+
+
+            &__btn {
+                width: auto;
+                height: 120px;
+                position: absolute;
+                right: -28px;     
+                bottom: -10px;
+                background: transparent;
+                display: flex;
+                .middle {
+                    width: 265px;
+                    height: 120px;
+                    background-color: var(--green-dark);
+                    clip-path: polygon(0 0, 100% 12%, 100% 88%, 0% 100%);
+                    text-transform: uppercase;
+                    color: var(--white); 
+                    font-weight: 700;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 5;
+                }  
+                cursor: pointer;   
+                
+                .left {
+                    display: flex;
+                    width: 60px;
+                    height: 120px;
+                    background-color: #20947e;
+                    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+                    position: relative;
+                    left: 1px;
+                    z-index: 5;
+                    color: var(--white);
+                    @include flex-center;
+                    font-size: 25px;
+                }
+                .right {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #4a4d58;
+                    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                    position: absolute;
+                    top: -10px;
+                    right: 0;
+                    z-index: 1;
+
+                }
+            }
+        }
+    }
+    
+}
 
 .footer {
     display: flex;
