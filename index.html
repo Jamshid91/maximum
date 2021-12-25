@@ -11,7 +11,16 @@
 <body>
    <section class="maximum">
        <div class="maximum-left">
-           <a href="#"><img src="assets/images/png/logo-header.png" class="maximum__logo" alt=""></a>
+           <a href="#">
+               <div class="maximum-logo">
+                    <div class="maximum-logo-item">
+                        <div class="maximum-logo-item-in">
+                            <img src="assets/images/png/logo_header.png" alt="">
+                        </div>
+                    </div>
+                    <div class="back"></div>
+               </div>
+            </a>
 
            <div class="maximum-contacts">
                 <div class="contact-item">
@@ -44,12 +53,14 @@
            </div>
 
             <div class="maximum-news">
-                    <h3 class="maximum-news__title">Новости</h3>
-                 <div class="maximum-news-item">
-                    <h4 class="news__sub-title">Заголовок важной новости или объявления!</h4>
-                    <p class="news__text">Мини-описание для объявления несколько строк попугаям!</p>
-                    <a href="#"><i class="fal fa-long-arrow-right"></i></a>
-                 </div>
+                <h3 class="maximum-news__title">Новости</h3>
+                    <div class="maximum-news-item">
+                        <div class="maximum-news-item-in">
+                            <h4 class="news__sub-title">Заголовок важной новости или объявления!</h4>
+                            <p class="news__text">Мини-описание для объявления несколько строк попугаям!</p>
+                            <a href="#"><i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
             </div>
            <div class="maximum-parrot">
                <img src="assets/images/png/parrot1.png" alt="" class="parrot__img">
@@ -59,12 +70,12 @@
             <span>заказов <br> в год</span>
            </div>
 
-            <a href="#">
-               <div class="maximum-left__btn">
-                <i class="fal fa-long-arrow-right"></i>
-                <span class="btn__text">Интересные факты</span>
-                </div>
-            </a>
+                     
+           <button class="maximum-left__btn" type="submit">
+                <span class="left"><i class="fal fa-long-arrow-right"></i></span>
+                <span class="middle">ЦЕНЫ И СКИДКИ</span>
+                <span class="right"></span>
+            </button>
        </div>
     <div class="maximum-right">
         <header class="header" id="header">
@@ -95,39 +106,36 @@
     
                 <div class="translation">
                     <div class="translation-item">
-                        <div class="discount">
-                            <span class="discount__text">-25%</span>
+                        <div class="percent" type="submit">
+                            <span class="left"></span>
+                            <span class="middle">-25%</span>
+                            <span class="right"></span>
                         </div>
                         <img src="assets/images/png/перевод1.png" alt="" class="translation__img">
                         <a href="#">
-                            <div class="translation-item__btn">
-                                <div class="btn__text">
-                                    <span>Письменный <br>перевод</span>
-                                    <i class="fal fa-long-arrow-right"></i>
-                                </div>
-                            </div>
+                            <button class="translation__btn" type="submit">
+                                <span class="right"></span>
+                                <span class="middle"><span>Письменный <br> перевод</span> <i class="fal fa-long-arrow-right"></i></span>
+                                <span class="left"></span>
+                            </button>
                         </a>
                     </div>
                     <div class="translation-item">
                         <img src="assets/images/png/перевод2.png" alt="" class="translation__img">
                         <a href="#">
-                            <div class="translation-item__btn btn_green">
-                                <div class="btn_green__text">
-                                    <span>Устный <br> перевод</span>
-                                    <i class="fal fa-long-arrow-right"></i>
-                                </div>
-                            </div>
+                            <button class="translation__btn green_btn" type="submit">
+                                <span class="middle"><span>Устный <br> перевод</span> <i class="fal fa-long-arrow-right"></i></span>
+                                <span class="left"></span>
+                            </button>
                         </a>
                     </div>
                     <div class="translation-item">
                         <img src="assets/images/png/перевод3.png" alt="" class="translation__img">
                         <a href="#">
-                            <div class="translation-item__btn ">
-                                <div class="btn__text">
-                                    <span>Нотариальный <br> перевод</span>
-                                    <i class="fal fa-long-arrow-right"></i>
-                                </div>
-                            </div>
+                            <button class="translation__btn" type="submit">
+                                <span class="middle"><span>Нотариальный <br> перевод</span><i class="fal fa-long-arrow-right"></i></span>
+                                <span class="left"></span>
+                            </button>
                         </a>
                     </div>
                     <img src="assets/images/png/Cup.png" alt="" class="translation__cup">
@@ -159,7 +167,12 @@
                         <h3 class="maximum-info-text__title">Максимально надёжно</h3>
                         <p class="maximum-info-text__text">Мы принимаем на себя официальное  обязательство соблюдать конфиденциальность</p>
                     </div>
-                    <img src="assets/images/png/reliably.png" class="securely__img"  alt="">
+                    <div class="securely-icon">
+                        <div class="securely-icon-box">
+                            <img src="assets/images/png/shield_edit_icon_138199.png" alt="">
+                        </div>
+                        <div class="back"></div>
+                    </div>
                 </div>
                 <div class="maximum-info-item">
                     <img src="assets/images/png/checkmark.png" class="maximum-info-item__img" alt="">
@@ -202,8 +215,14 @@
                 <span class="satisfied-customers__num">3</span>
                 <span class="satisfied-customers__num">4</span>
             </div>
-               <h3 class="customers-item__title">Наши клиенты</h3>
-                <div class="customers-img">
+
+                <div class="our-customers">
+                    <div class="our-customers-item">Наши клиенты</div>
+                    <div class="back"></div>
+                </div>
+
+               <div class="customers-box">
+                   <div class="customers-box-in">
                     <img src="assets/images/png/brend1.png" class="customers__brend" alt="brend.png">
                     <img src="assets/images/png/brend5.png" class="customers__brend" alt="brend.png">
                     <img src="assets/images/png/brend3.png" class="customers__brend" alt="brend.png">
@@ -216,8 +235,15 @@
                     <img src="assets/images/png/brend10.png" class="customers__brend" alt="brend.png">
                     <img src="assets/images/png/brend11.png" class="customers__brend" alt="brend.png">
                     <img src="assets/images/png/brend12.png" class="customers__brend" alt="brend.png">
-                </div>
-                <img src="assets/images/png/figure-right.png" alt="" class="customers__right-img">
+                    <img src="assets/images/png/brend5.png" class="customers__brend" alt="brend.png">
+                   </div>
+               </div>
+               <div class="customers-right">
+                   <div class="customers-right-box"></div>
+                   <div class="middle-box"></div>
+                   <div class="customers-right-box green_box"></div>
+               </div>
+                <!-- <img src="assets/images/png/figure-right.png" alt="" class="customers__right-img"> -->
                 <img src="assets/images/png/white-parrot.png" alt="" class="white__parrot">
         </div>
     </div>
@@ -225,10 +251,33 @@
    <!-- End  customers-->
 
    <section class="aside">
-       <div class="aside-left"></div>
+       <div class="aside-left">
+           <div class="aside-left-item">
+            <div class="aside-left-item-info">
+                <h3 class="info__title">Для постоянных клиентов 
+                    у нас предусмотрены скидки
+                    </h3>
+                <p class="info__text">Краткий текст по теме объявления или акции. 
+                    Небольшое, но очень важное объявление. 
+                    Краткий текст по теме объявления или акции. 
+                    </p>
+                <p class="info__text">Небольшое, но очень важное объявление 
+                    в несколько строчек и так далее...</p>
+            </div> 
+           </div>
+           <div class="left-img">
+            <img src="assets/images/png/girl.png" alt="" class="aside-left__img">
+            <div class="rhombus"></div>
+           </div>             
+           <button class="aside-left__btn" type="submit">
+            <span class="left"><i class="fal fa-long-arrow-right"></i></span>
+            <span class="middle">ЦЕНЫ И СКИДКИ</span>
+            <span class="right"></span>
+            </button>
+       </div>
+       <!-- End  aside-left-->
        <div class="aside-right">
-           <div class="right-box">
-               
+           <div class="right-box">   
            </div>
            <form class="form">
                <h2 class="form__title">Напишите нам</h2>
@@ -277,6 +326,7 @@
            </form>
            <div class="aside-right-bg"></div>
        </div>
+       <!-- End aside-right -->
    </section>
 
    <footer class="footer">
