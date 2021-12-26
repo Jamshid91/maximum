@@ -676,6 +676,16 @@
         }
     }
     // End customers
+
+    .footer {
+        &-item-flex {
+            flex-direction: column;
+    
+            .right_item {
+                margin-left: 0px;
+            }
+        }
+    }
 }
 
 @media screen and(max-width: 375px) {
